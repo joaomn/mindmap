@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
+<link rel="icon" href="./autismo.png" type="image/png">
+<title>TEAcher</title>
 <style>
 * {
   margin: 0;
@@ -15,10 +16,22 @@
   width: 100vw;
   height: 100vh;
 }
+
+.header{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
 </head>
 <body>
+
+  <div class="header">
+    <h1>TEAcher - Chatbot de auxilio a professores na educação de alunos com TEA</h1>
+  </div>
 <svg id="mindmap"></svg>
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:x,mm:K}=window,P=new x.Toolbar;P.attach(K);const F=P.render();F.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(F)})})()</script><script>((b,L,T,D)=>{const H=b();window.mm=H.Markmap.create("svg#mindmap",(L||H.deriveOptions)(D),T)})(()=>window.markmap,null,{"content":"Metodologia de Construção do Chatbot","children":[{"content":"1. Coleta e Prepara&#xe7;&#xe3;o do Corpus","children":[{"content":"&#x1f4da; <strong>Fontes de Dados</strong>","children":[{"content":"Artigos cient&#xed;ficos sobre TEA","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Trechos de livros especializados","children":[],"payload":{"tag":"li","lines":"9,10"}},{"content":"Materiais did&#xe1;ticos pedag&#xf3;gicos","children":[],"payload":{"tag":"li","lines":"10,11"}}],"payload":{"tag":"li","lines":"7,11"}},{"content":"&#x1f50d; <strong>Pr&#xe9;-processamento dos dados</strong>","children":[{"content":"Remover stopwords","children":[],"payload":{"tag":"li","lines":"12,13"}},{"content":"Normaliza&#xe7;&#xe3;o de texto (lowercase, stemming, lematiza&#xe7;&#xe3;o)","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"Tokeniza&#xe7;&#xe3;o para segmenta&#xe7;&#xe3;o de palavras","children":[],"payload":{"tag":"li","lines":"14,16"}}],"payload":{"tag":"li","lines":"11,16"}}],"payload":{"tag":"h2","lines":"6,7"}},{"content":"2. Treinamento do Modelo de Linguagem","children":[{"content":"&#x1f4cc; <strong>Representa&#xe7;&#xe3;o Vetorial</strong>","children":[{"content":"Utiliza&#xe7;&#xe3;o do <strong>Word2Vec</strong> para transformar palavras em vetores sem&#xe2;nticos","children":[],"payload":{"tag":"li","lines":"18,19"}}],"payload":{"tag":"li","lines":"17,19"}},{"content":"&#x1f916; <strong>Treinamento com Modelos de NLP</strong>","children":[{"content":"Uso da biblioteca <strong>Hugging Face</strong>","children":[],"payload":{"tag":"li","lines":"20,21"}},{"content":"Teste com <strong>BERT</strong> ou modelo pr&#xf3;prio baseado em Transformers","children":[],"payload":{"tag":"li","lines":"21,22"}}],"payload":{"tag":"li","lines":"19,22"}},{"content":"&#x1f504; <strong>Ajustes e Fine-tuning</strong>","children":[{"content":"Ajuste de hiperpar&#xe2;metros","children":[],"payload":{"tag":"li","lines":"23,24"}},{"content":"Treinamento supervisionado com perguntas e respostas baseadas no corpus","children":[],"payload":{"tag":"li","lines":"24,26"}}],"payload":{"tag":"li","lines":"22,26"}}],"payload":{"tag":"h2","lines":"16,17"}},{"content":"3. Desenvolvimento da Interface","children":[{"content":"&#x1f310; <strong>API REST</strong>","children":[{"content":"Backend em <strong>FastAPI</strong> ou <strong>Flask</strong> para expor endpoints do chatbot","children":[],"payload":{"tag":"li","lines":"28,29"}}],"payload":{"tag":"li","lines":"27,29"}},{"content":"&#x1f4f1; <strong>Integra&#xe7;&#xe3;o com WhatsApp</strong>","children":[{"content":"Uso do <strong>Twilio API</strong> para comunica&#xe7;&#xe3;o via mensagens","children":[],"payload":{"tag":"li","lines":"30,31"}}],"payload":{"tag":"li","lines":"29,31"}},{"content":"&#x1f5a5; <strong>Web App (Opcional)</strong>","children":[{"content":"Frontend simples para intera&#xe7;&#xe3;o via navegador","children":[],"payload":{"tag":"li","lines":"32,34"}}],"payload":{"tag":"li","lines":"31,34"}}],"payload":{"tag":"h2","lines":"26,27"}},{"content":"4. Avalia&#xe7;&#xe3;o e Melhoria Cont&#xed;nua","children":[{"content":"&#x1f4ca; <strong>Coleta de M&#xe9;tricas</strong>","children":[{"content":"Precis&#xe3;o e Recall na classifica&#xe7;&#xe3;o das respostas","children":[],"payload":{"tag":"li","lines":"36,37"}},{"content":"Satisfa&#xe7;&#xe3;o do usu&#xe1;rio com feedbacks diretos","children":[],"payload":{"tag":"li","lines":"37,38"}}],"payload":{"tag":"li","lines":"35,38"}},{"content":"&#x1f527; <strong>Corre&#xe7;&#xe3;o de Erros</strong>","children":[{"content":"Refinamento do modelo com base nos erros identificados","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"Atualiza&#xe7;&#xe3;o cont&#xed;nua do corpus","children":[],"payload":{"tag":"li","lines":"40,41"}}],"payload":{"tag":"li","lines":"38,41"}}],"payload":{"tag":"h2","lines":"34,35"}}]},{"colorFreezeLevel":5})</script>
 </body>
